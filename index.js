@@ -17,6 +17,8 @@ calculateButton.addEventListener("click", function () {
 
 
 document.addEventListener("keydown", function (event) {
-    calculateTotal();
+    if (event.key === `Enter`) {
+        calculateTotal();
+    }
 })
 
